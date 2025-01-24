@@ -1,5 +1,5 @@
-import { useDispatch, useSelector } from 'react-redux'
-import Button from '../Button'
+import { useDispatch, useSelector } from 'react-redux';
+import Button from '../Button';
 import {
   CartContainer,
   CartItem,
@@ -7,29 +7,29 @@ import {
   Prices,
   Quantity,
   Sidebar
-} from './styles'
-import { RootReducer } from '../../store'
-import { close, remove } from '../../store/reducers/cart'
+} from './styles';
+import { RootReducer } from '../../store';
+import { close, remove } from '../../store/reducers/cart';
 // import { formataPreco } from '../ProductsList'
 
 const Cart = () => {
-  const { isOpen, items } = useSelector((state: RootReducer) => state.cart)
+  const { isOpen, items } = useSelector((state: RootReducer) => state.cart);
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const closeCart = () => {
-    dispatch(close())
-  }
+    dispatch(close());
+  };
 
   const getTotalPrice = () => {
     return items.reduce((acumulador, valorAtual) => {
-      return (acumulador += valorAtual.cardapio.preco)
-    }, 0)
-  }
+      return (acumulador += valorAtual.cardapio.preco);
+    }, 0);
+  };
 
   const removeItem = (id: number) => {
-    dispatch(remove(id))
-  }
+    dispatch(remove(id));
+  };
   return (
     <CartContainer className={isOpen ? 'is-open' : ''}>
       <Overlay onClick={closeCart} />
@@ -59,6 +59,6 @@ const Cart = () => {
         </Button>
       </Sidebar>
     </CartContainer>
-  )
-}
-export default Cart
+  );
+};
+export default Cart;

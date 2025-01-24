@@ -1,5 +1,5 @@
-import Button from '../Button'
-import Tag from '../Tag'
+import Button from '../Button';
+import Tag from '../Tag';
 import {
   CardContainer,
   Estrela,
@@ -7,18 +7,18 @@ import {
   Paragrafo,
   Titulo,
   TituloContainer
-} from './styles'
-import estrela from '../../assets/images/estrela.png'
+} from './styles';
+import estrela from '../../assets/images/estrela.png';
 
 type Props = {
-  name: string
-  nota: number
-  description: string
-  tipo: string
-  image: string
-  id: number
-  destaque: boolean
-}
+  name: string;
+  nota: number;
+  description: string;
+  tipo: string;
+  image: string;
+  id: number;
+  destaque: boolean;
+};
 
 const Restaurant = ({
   id,
@@ -59,6 +59,6 @@ const Restaurant = ({
       </Button>
     </div>
   </CardContainer>
-)
+);
 
-export default Restaurant
+export default Restaurant;

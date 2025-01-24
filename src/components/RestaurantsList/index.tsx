@@ -1,10 +1,10 @@
-import { Restaurantes } from '../../pages/Home'
-import Restaurant from '../Restaurant'
-import { Container, List } from './styles'
+import { Restaurantes } from '../../pages/Home';
+import Restaurant from '../Restaurant';
+import { Container, List } from './styles';
 
 export type Props = {
-  restaurantes: Restaurantes[]
-}
+  restaurantes: Restaurantes[];
+};
 
 const RestaurantsList = ({ restaurantes }: Props) => (
   <Container>
@@ -25,6 +25,6 @@ const RestaurantsList = ({ restaurantes }: Props) => (
       </List>
     </div>
   </Container>
-)
+);
 
-export default RestaurantsList
+export default RestaurantsList;

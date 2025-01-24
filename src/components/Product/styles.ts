@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { cores } from '../../styles'
-import { ButtonProduct } from '../Button/styles'
+import styled from 'styled-components';
+import { cores } from '../../styles';
+import { ButtonProduct } from '../Button/styles';
 
 export const CardContainer = styled.div`
   border: 1px solid ${cores.rosa};
@@ -19,20 +19,20 @@ export const CardContainer = styled.div`
     width: 100%;
     cursor: pointer;
   }
-`
+`;
 
 export const Titulo = styled.h3`
   font-size: 16px;
   font-weight: 900;
   margin: 8px 0;
-`
+`;
 export const Paragrafo = styled.p`
   font-size: 14px;
   line-height: 22px;
   display: block;
   height: 88px;
   margin-bottom: 8px;
-`
+`;
 export const Modal = styled.div`
   position: fixed;
   top: 0;
@@ -56,7 +56,7 @@ export const Modal = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.73);
   }
-`
+`;
 export const ModalContent = styled.div`
   max-width: 1024px;
   position: relative;
@@ -83,7 +83,7 @@ export const ModalContent = styled.div`
       cursor: pointer;
     }
   }
-`
+`;
 export const Content = styled.div`
   display: flex;
   justify-content: space-between;
@@ -107,4 +107,4 @@ export const Content = styled.div`
     margin: 32px 24px 32px 32px;
     object-fit: cover;
   }
-`
+`;

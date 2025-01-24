@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const cores = {
   branco: '#FFEBD9',
@@ -7,7 +7,7 @@ export const cores = {
   fundo: '#FFF8F2',
   fundoClaro: '#FFFFFF',
   rosa: ' #E66767'
-}
+};
 
 export const GlobalCss = createGlobalStyle`
   * {
@@ -29,4 +29,4 @@ export const GlobalCss = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
   }
-`
+`;

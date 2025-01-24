@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { cores } from '../../styles'
+import styled from 'styled-components';
+import { cores } from '../../styles';
 
 export const Imagem = styled.div`
   width: 100%;
@@ -37,4 +37,4 @@ export const Imagem = styled.div`
     margin-bottom: 32px;
     line-height: 38px;
   }
-`
+`;

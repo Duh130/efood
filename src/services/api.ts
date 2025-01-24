@@ -1,5 +1,5 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { Restaurantes } from '../pages/Home'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { Restaurantes } from '../pages/Home';
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
@@ -16,11 +16,11 @@ const api = createApi({
       query: (id) => `restaurantes/${id}`
     })
   })
-})
+});
 
 export const {
   useGetRestaurantesQuery,
   useGetCardapioQuery,
   useGetProdutoQuery
-} = api
-export default api
+} = api;
+export default api;

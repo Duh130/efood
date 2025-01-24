@@ -1,8 +1,8 @@
-import { Container, FooterSection, Link, Links } from './styles'
-import logo from '../../assets/images/logo.png'
-import instagram from '../../assets/images/instagram.png'
-import facebook from '../../assets/images/facebook.png'
-import twitter from '../../assets/images/twitter.png'
+import { Container, FooterSection, Link, Links } from './styles';
+import logo from '../../assets/images/logo.png';
+import instagram from '../../assets/images/instagram.png';
+import facebook from '../../assets/images/facebook.png';
+import twitter from '../../assets/images/twitter.png';
 
 const Footer = () => (
   <Container>
@@ -34,6 +34,6 @@ const Footer = () => (
       </FooterSection>
     </div>
   </Container>
-)
+);
 
-export default Footer
+export default Footer;

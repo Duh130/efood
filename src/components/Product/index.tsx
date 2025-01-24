@@ -1,4 +1,4 @@
-import Button from '../Button'
+import Button from '../Button';
 import {
   CardContainer,
   Content,
@@ -6,46 +6,46 @@ import {
   ModalContent,
   Paragrafo,
   Titulo
-} from './styles'
-import { useState } from 'react'
-import fechar from '../../assets/images/fechar.png'
-import { useDispatch } from 'react-redux'
-import { add, open } from '../../store/reducers/cart'
-import { Restaurantes } from '../../pages/Home'
+} from './styles';
+import { useState } from 'react';
+import fechar from '../../assets/images/fechar.png';
+import { useDispatch } from 'react-redux';
+import { add, open } from '../../store/reducers/cart';
+import { Restaurantes } from '../../pages/Home';
 
 type Props = {
-  produto: Restaurantes
-}
+  produto: Restaurantes;
+};
 
 export const formataPreco = (preco = 0) => {
   return new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL'
-  }).format(preco)
-}
+  }).format(preco);
+};
 
 const Product = ({ produto }: Props) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const addCart = () => {
-    dispatch(add(produto))
-    dispatch(open())
-  }
+    dispatch(add(produto));
+    dispatch(open());
+  };
 
   const [modal, setModal] = useState({
     isVisible: false
-  })
+  });
   const closeModal = () => {
     setModal({
       isVisible: false
-    })
-  }
+    });
+  };
   const getDescription = (description: string) => {
     if (description.length > 150) {
-      return description.slice(0, 150) + '...'
+      return description.slice(0, 150) + '...';
     }
-    return description
-  }
+    return description;
+  };
 
   return (
     <>
@@ -98,7 +98,7 @@ const Product = ({ produto }: Props) => {
         <div className="overlay" onClick={closeModal}></div>
       </Modal>
     </>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;

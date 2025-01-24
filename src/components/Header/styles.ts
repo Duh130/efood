@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HeaderBar = styled.header`
   display: flex;
@@ -17,11 +17,11 @@ export const HeaderBar = styled.header`
   img {
     margin-top: 64px;
   }
-`
+`;
 
 export const Titulo = styled.h2`
   font-size: 36px;
   margin-bottom: 40px;
   width: 539px;
   text-align: center;
-`
+`;

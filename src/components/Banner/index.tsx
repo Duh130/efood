@@ -1,9 +1,9 @@
-import { Imagem } from './styles'
-import { Restaurantes } from '../../pages/Home'
+import { Imagem } from './styles';
+import { Restaurantes } from '../../pages/Home';
 
 type Props = {
-  dados: Restaurantes[]
-}
+  dados: Restaurantes[];
+};
 const Banner = ({ dados }: Props) => {
   return (
     <>
@@ -18,7 +18,7 @@ const Banner = ({ dados }: Props) => {
           </Imagem>
         ))}
     </>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

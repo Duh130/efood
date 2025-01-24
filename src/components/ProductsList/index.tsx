@@ -1,10 +1,10 @@
-import { Restaurantes } from '../../pages/Home'
-import Product from '../Product'
-import { Container, List } from './styles'
+import { Restaurantes } from '../../pages/Home';
+import Product from '../Product';
+import { Container, List } from './styles';
 
 type Props = {
-  items: Restaurantes[]
-}
+  items: Restaurantes[];
+};
 const ProductsList = ({ items }: Props) => {
   return (
     <Container>
@@ -36,7 +36,7 @@ const ProductsList = ({ items }: Props) => {
         </List>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default ProductsList
+export default ProductsList;

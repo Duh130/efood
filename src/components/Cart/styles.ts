@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import { cores } from '../../styles'
-import { TagContainer } from '../Tag/styles'
-import { ButtonProduct } from '../Button/styles'
-import fechar from '../../assets/images/close.png'
+import styled from 'styled-components';
+import { cores } from '../../styles';
+import { TagContainer } from '../Tag/styles';
+import { ButtonProduct } from '../Button/styles';
+import fechar from '../../assets/images/close.png';
 export const Overlay = styled.div`
   position: absolute;
   top: 0;
@@ -11,7 +11,7 @@ export const Overlay = styled.div`
   height: 100%;
   background-color: #000;
   opacity: 0.7;
-`
+`;
 export const CartContainer = styled.div`
   position: fixed;
   top: 0;
@@ -25,7 +25,7 @@ export const CartContainer = styled.div`
   &.is-open {
     display: flex;
   }
-`
+`;
 export const Sidebar = styled.aside`
   background-color: ${cores.rosa};
   z-index: 1;
@@ -38,7 +38,7 @@ export const Sidebar = styled.aside`
     width: 100%;
     cursor: pointer;
   }
-`
+`;
 export const Prices = styled.p`
   font-weight: bold;
   font-size: 14px;
@@ -50,7 +50,7 @@ export const Prices = styled.p`
     font-size: 12px;
     color: ${cores.fundo};
   }
-`
+`;
 
 export const Quantity = styled.p`
   font-weight: bold;
@@ -58,7 +58,7 @@ export const Quantity = styled.p`
   color: ${cores.rosa};
   margin-top: 32px;
   margin-bottom: 16px;
-`
+`;
 
 export const CartItem = styled.li`
   display: flex;
@@ -100,4 +100,4 @@ export const CartItem = styled.li`
     right: 0;
     cursor: pointer;
   }
-`
+`;

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { cores } from '../../styles'
-import { TagContainer } from '../Tag/styles'
+import styled from 'styled-components';
+import { cores } from '../../styles';
+import { TagContainer } from '../Tag/styles';
 
 export const CardContainer = styled.div`
   border: 1px solid ${cores.rosa};
@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
   ${TagContainer} {
     margin-right: 8px;
   }
-`
+`;
 export const TituloContainer = styled.div`
   display: flex;
   align-items: center;
@@ -26,29 +26,29 @@ export const TituloContainer = styled.div`
   div {
     display: flex;
   }
-`
+`;
 export const Titulo = styled.h3`
   font-size: 18px;
   font-weight: bold;
   margin-top: 8px;
   margin-bottom: 16px;
-`
+`;
 export const Paragrafo = styled.p`
   font-size: 14px;
   line-height: 22px;
   display: block;
   margin: 16px 8px;
-`
+`;
 export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
-`
+`;
 export const Estrela = styled.img`
   height: 21px;
   width: 21px;
   margin: 8px;
-`
+`;
 export const TagDestaque = styled.span`
   position: absolute;
   top: 16px;
@@ -57,4 +57,4 @@ export const TagDestaque = styled.span`
   background-color: ${cores.rosa};
   color: white;
   font-size: 12px;
-`
+`;

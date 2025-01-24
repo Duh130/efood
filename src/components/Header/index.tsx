@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import { HeaderBar, Titulo } from './styles'
-import logo from '../../assets/images/logo.png'
-import bannerImg from '../../assets/images/Vector.png'
+import { Link } from 'react-router-dom';
+import { HeaderBar, Titulo } from './styles';
+import logo from '../../assets/images/logo.png';
+import bannerImg from '../../assets/images/Vector.png';
 
 const Header = () => {
   return (
@@ -13,6 +13,6 @@ const Header = () => {
         <Titulo>Viva experiências gastronômicas no conforto da sua casa</Titulo>
       </div>
     </HeaderBar>
-  )
-}
-export default Header
+  );
+};
+export default Header;

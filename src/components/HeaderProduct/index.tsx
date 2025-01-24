@@ -1,18 +1,18 @@
-import { Link } from 'react-router-dom'
-import { HeaderBar, Titulo } from './styles'
-import logo from '../../assets/images/logo.png'
-import bannerImg from '../../assets/images/Vector.png'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootReducer } from '../../store'
-import { open } from '../../store/reducers/cart'
+import { Link } from 'react-router-dom';
+import { HeaderBar, Titulo } from './styles';
+import logo from '../../assets/images/logo.png';
+import bannerImg from '../../assets/images/Vector.png';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootReducer } from '../../store';
+import { open } from '../../store/reducers/cart';
 
 const HeaderProduct = () => {
-  const dispatch = useDispatch()
-  const { items } = useSelector((state: RootReducer) => state.cart)
+  const dispatch = useDispatch();
+  const { items } = useSelector((state: RootReducer) => state.cart);
 
   const openCart = () => {
-    dispatch(open())
-  }
+    dispatch(open());
+  };
   return (
     <HeaderBar style={{ backgroundImage: `url(${bannerImg})` }}>
       <div className="container">
@@ -27,6 +27,6 @@ const HeaderProduct = () => {
         </Titulo>
       </div>
     </HeaderBar>
-  )
-}
-export default HeaderProduct
+  );
+};
+export default HeaderProduct;

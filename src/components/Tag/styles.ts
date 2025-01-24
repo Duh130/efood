@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { cores } from '../../styles'
-import { Props } from '.'
+import styled from 'styled-components';
+import { cores } from '../../styles';
+import { Props } from '.';
 
 export const TagContainer = styled.div<Props>`
   background-color: ${cores.rosa};
@@ -9,4 +9,4 @@ export const TagContainer = styled.div<Props>`
   font-weight: bold;
   padding: 4px 6px;
   display: inline-block;
-`
+`;
