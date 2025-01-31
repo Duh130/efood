@@ -1,19 +1,34 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { Restaurantes } from '../pages/Home';
+
+// Defina os tipos corretos
+interface Restaurante {
+  id: string;
+  nome: string;
+  capa: string;
+  descricao: string;
+}
+
+interface Produto {
+  id: string;
+  nome: string;
+  imagem: string;
+  descricao: string;
+  preco: number;
+}
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://fake-api-tau.vercel.app/api/efood'
   }),
   endpoints: (builder) => ({
-    getRestaurantes: builder.query<Restaurantes[], void>({
+    getRestaurantes: builder.query<Restaurante[], void>({
       query: () => 'restaurantes'
     }),
-    getCardapio: builder.query<Restaurantes[], string>({
+    getCardapio: builder.query<Restaurante, string>({
       query: (id) => `restaurantes/${id}`
     }),
-    getProduto: builder.query<Restaurantes[], string>({
-      query: (id) => `restaurantes/${id}`
+    getProduto: builder.query<Produto[], string>({
+      query: (id) => `restaurantes/${id}/cardapio`
     })
   })
 });

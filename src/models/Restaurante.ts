@@ -1,10 +1,10 @@
 class Restaurante {
+  id: number;
   nota: string;
   description: string;
   image: string;
   infos: string[];
   title: string;
-  id: number;
 
   constructor(
     id: number,
@@ -23,4 +23,4 @@ class Restaurante {
   }
 }
 
-export default Restaurante;
+export { Restaurante }; // Named export

@@ -1,8 +1,8 @@
 class Produto {
+  id: number;
   description: string;
   image: string;
   title: string;
-  id: number;
 
   constructor(id: number, description: string, image: string, title: string) {
     this.id = id;
@@ -12,4 +12,4 @@ class Produto {
   }
 }
 
-export default Produto;
+export { Produto }; // Named export
